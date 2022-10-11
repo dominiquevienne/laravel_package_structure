@@ -35,7 +35,7 @@ echo -e "Creating skeleton in ${LIGHT_GREEN}${DIR}${ENDCOLOR}"
 echo
 
 for i in "${!DIRECTORIES_TO_CREATE[@]}"; do
-    mkdir -p "${DIRECTORIES_TO_CREATE[i]}"
-    touch "${DIRECTORIES_TO_CREATE[i]}/${GITKEEP}"
-    echo "${DIRECTORIES_TO_CREATE[i]} ...... Directory created"
+    mkdir -p "${DIR}${DIRECTORIES_TO_CREATE[i]}"
+    touch "${DIR}${DIRECTORIES_TO_CREATE[i]}/${GITKEEP}"
+    echo "${DIR}${DIRECTORIES_TO_CREATE[i]} ...... Directory created"
 done
